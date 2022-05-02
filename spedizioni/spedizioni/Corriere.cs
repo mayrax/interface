@@ -8,7 +8,7 @@ namespace Spedizioni
 {
     public class Corriere 
     {
-        public string Nome;
+        private string Nome;
         public List<Spedizione> Consegne;
         
         public Corriere(string nome)
