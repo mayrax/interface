@@ -24,13 +24,17 @@ namespace Spedizioni
         }
 
 
-        public void listaSpedizioni()
+        public string listaSpedizioni()
         {
+            var output = string.Empty;
             foreach (var spedizione in Consegne)
             {
-                Console.WriteLine($"Mittente: {spedizione.Mittente}\n + Destinatario: {spedizione.Destinatario}\n + Ingombro: {spedizione.ingombro}");
+               output = string.Concat(output,
+                   $"Mittente: {spedizione.Mittente}\n + Destinatario: {spedizione.Destinatario}\n + Ingombro: {spedizione.ingombro()}",Environment.NewLine);
 
             }
+
+            return output;
         }
 
         public double TotaleIngombro()

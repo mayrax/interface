@@ -13,8 +13,8 @@ corriere3.addSpedizione(paccoAmazon);
 
 Console.WriteLine($"lista spedizioni {Corriere1.Nome}");
 Console.WriteLine("\n");
-Console.WriteLine(Corriere1.listaSpedizioni);
-Console.WriteLine($"quantita di ingombro totale: {Corriere1.TotaleIngombro}");
+Console.WriteLine(Corriere1.listaSpedizioni());
+Console.WriteLine($"quantita di ingombro totale: {Corriere1.TotaleIngombro()}");
 Console.ReadLine();
 
 
